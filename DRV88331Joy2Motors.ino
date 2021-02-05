@@ -51,7 +51,7 @@ void loop() {
   joyposY = analogRead(joyY);
 
 
-  //Serial.println(joyposX);
+  Serial.println(joyposX);
   //Serial.println(joyposY);
 
   // check for a fault
@@ -68,8 +68,8 @@ void loop() {
       // This is forward
       digitalWrite(ain1, LOW);
       digitalWrite(ain2, HIGH);
-      digitalWrite(bin1, LOW);
-      digitalWrite(bin2, HIGH);
+      digitalWrite(bin1, HIGH);
+      digitalWrite(bin2, LOW);
 
     }
 
@@ -81,8 +81,8 @@ void loop() {
       // This is forward
       digitalWrite(ain1, HIGH);
       digitalWrite(ain2, LOW);
-      digitalWrite(bin1, HIGH);
-      digitalWrite(bin2, LOW);
+      digitalWrite(bin1, LOW);
+      digitalWrite(bin2, HIGH);
 
     }
     else  if (joyposY < 505)
@@ -93,8 +93,8 @@ void loop() {
       // This is forward
       digitalWrite(ain1, HIGH);
       digitalWrite(ain2, LOW);
-      digitalWrite(bin1, LOW);
-      digitalWrite(bin2, HIGH);
+      digitalWrite(bin1, HIGH);
+      digitalWrite(bin2, LOW);
 
     }
     else  if (joyposY > 520)
@@ -105,8 +105,8 @@ void loop() {
       // This is forward
       digitalWrite(ain1, LOW);
       digitalWrite(ain2, HIGH);
-      digitalWrite(bin1, HIGH);
-      digitalWrite(bin2, LOW);
+      digitalWrite(bin1, LOW);
+      digitalWrite(bin2, HIGH);
 
     }
     else {
