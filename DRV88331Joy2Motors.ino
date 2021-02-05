@@ -117,12 +117,6 @@ void loop() {
       // disable DRV8833, conserve power
       digitalWrite(slp, LOW);
     }
-  } else {
-
-    digitalWrite(ain1, LOW);
-    digitalWrite(ain2, LOW);
-    digitalWrite(bin1, LOW);
-    digitalWrite(bin2, LOW);
   }
 
   delay(500);
