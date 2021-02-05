@@ -9,5 +9,4 @@ There is as well other motor driver that offer higher amps like the DRV8871 DC M
 This sketch leverage digitalWrite to use signal to motor pins and change rotation of motor using HIGH or LOW. If you want PWM see sketch using PWM (analogWrite)
 
 
-Youtube:
-https://youtu.be/gEw1WoNPGWg
+
